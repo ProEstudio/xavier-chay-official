@@ -1,0 +1,193 @@
+#main{
+	background: $color1;
+	text-align:center;
+	@include desde(web){
+		text-align: left
+	}
+}
+//INDEX
+#content{
+	background:#000;
+	padding: 1em 0
+}
+	@each $cancion in C , A , E{
+		.#{$cancion}{
+			background: url('../../img/cover/#{$cancion}.jpg')
+		}
+	}
+.content{
+	&_titulo{
+		font-size: 2.5em;
+		font-weight: 200;
+		text-align: center;
+	}
+	.cancion{
+		background-size: 100%; 
+		margin: .8em 1em;
+		width: 92%;
+		border: 1px solid $color3;
+		opacity: .9;
+		@include desde(tablet){
+			width:96%;
+			margin:1em; 
+		}
+		&:hover{
+			opacity: 1;
+		}
+		@include desde(web){
+			width: 32%;
+			margin: .5em
+		}
+		&__title{
+			padding: .1em;
+			color: $color3;
+			font-weight: 200;
+			background: rgba($color1, .7);
+			width: 60%;
+			text-align: center;
+		}
+		&_boton{
+			font-size:1.3em;
+			text-align: center;
+			text-decoration: none;
+			width: 5em;
+			padding: .5em;
+			background: rgba($color1 , .8);
+			color:darken($color3 , 20);
+			border: none;
+			margin:50% 0 .4em;
+			@include desde(web){
+				margin-top: 70%;
+				width: 5em;
+				font-size:1.3em;
+				padding:.5em;
+			}
+			float: right;
+			font-weight: 400;
+			&:hover{
+				background: $color2;
+				color:$color3;
+			}
+		}
+	}
+}
+//CONTACTO
+.formu{
+	padding: 1em;
+	&_correo{
+		font-weight: 100;
+		color: $color2;
+		text-decoration: none;
+	}
+	&_text , &_area , &_boton{
+		color:#fff;
+		font-weight: 100;
+		width: 100%;
+		max-width: 100%;
+		padding: 1.2em 1em;
+		background:lighten($color1 , 1);
+		border: 1px solid lighten($color1 , 10);
+		&:hover{
+			border: 1px solid $color2;
+			}
+		&:focus{
+			border: 1px solid $color2;
+		}
+		}
+		&_area{
+			padding: .5em .9em;
+			height: 200px;
+			min-height: 200px;
+			max-width: 100%;
+			min-width: 100%
+		}
+		&_boton{
+			max-width: 6em;
+			float: left;
+			background: darken($color1, 2);
+			font-weight: 700;
+			padding: .8em;
+			&:hover{
+				background: $color2
+			}
+		}
+	&_titulo{
+		font-size: 1.2em;
+		text-align: left;
+	}
+}
+.redes{
+	&_insta , &_face , &_twitter{
+		padding: 3.9em;
+		margin: 0;
+		text-align: center;
+	}
+	&_insta{
+		background:#125688; 
+		margin-top: 2em;
+	}
+	&_face{
+		background:#3B5998;
+	}
+	&_twitter{
+		background: #4099FF;
+		margin-bottom: .8em;
+	}
+}
+//GALERIA
+.galeria{
+	.evento{
+		background: #fff;
+		color: $color1;
+		font-weight: 400;
+		font-size: 1.5em;
+		text-decoration: none;
+		margin: .5em 0;
+		text-align: center;
+		border: 2px solid lighten($color1, 10);
+		opacity: .8;
+		background: url('/tema/img/galeria/evento-1/1.jpg');
+		@include desde(web){
+			margin: .6em .8em;
+		}
+		&:hover{
+			opacity:1;
+		}
+		&_titulo{
+			margin-top: 90%;
+			padding: .5em;
+			background: rgba($color3, .8)
+		}
+	}
+}
+//NOTICIAS
+#secciones{
+	background: $color1;
+	text-align: left;
+	border: 1px solid lighten($color1, 20);
+	margin: 1.5em 0;
+	padding-left: 1.6em;
+	h3{
+		color: $color3;
+		padding: 1em;
+	}
+	p{
+		font-weight: 300;
+		padding: 1em 0
+	}
+	.boton-n{
+		text-align: right;
+		a{
+			color: $color2;
+			text-decoration: none;
+			padding: .5em;
+			font-weight: 400;
+			&:hover{
+				background: $color2;
+				color: $color3;
+				transition: all .3s
+			}
+		}
+	}
+	
+}

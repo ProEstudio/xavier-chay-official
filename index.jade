@@ -1,0 +1,46 @@
+//- index.jade
+extends ./tema/template/index.jade
+block contenido
+	section#video
+		iframe(src="https://www.youtube.com/embed/s0ah0GbcDQc?rel=0&controls=0&showinfo=0&autoplay=1" height="720" )
+	//.slides
+		ul
+			li
+				img(src="tema/img/slider/slider.jpg", alt="")
+			li
+				img(src="tema/img/slider/slider1.jpg", alt="")
+			li
+				img(src="tema/img/slider/slider2.jpg", alt="")
+			li
+				img(src="tema/img/slider/slider3.jpg", alt="")
+	.slider
+		- for(var i = 0 ; i < 4 ; i++ )
+			section
+				img(src="/tema/img/slider/slider#{i}.jpg" , alt="").slider_img
+	article#content
+			.grupo.no-padding
+				.caja.content.-web-1-3
+					h3.content_titulo CANCIONES
+					-list = ["Cuando Volveras" , "Aqui Estoy" , "Explicame"]
+					each cancion in list
+						.caja.cancion(class=cancion[0])
+							h2.cancion__title= cancion
+							- for(var i = 0 ; i < 3 ; i++)
+								if(i < 1)
+									- list2=["#" , "a" , "b"]
+										a(target="_blank" href=list2).cancion_boton Ver	
+	aside#sidebar
+				.block
+					h1.block_title Siguenos en	
+					.elemento
+						a.block_link(target="_blank" href="https://www.facebook.com/xavierychay").icon-facebook
+					.elemento
+						a.block_link(target="_blank" href="https://www.twitter.com/xavierychay").icon-twitter
+					.elemento
+						a.block_link(target="_blank" href="https://www.instagram.com/xavierychay").icon-instagram
+					.elemento
+						a.block_link(target="_blank" href="https://www.youtube.com/user/luarbes2").icon-youtube
+				.block-2
+					- list = ["Instagram" , "Twitter" , "Facebook"]
+					each redes in list
+						h3.block-2_titu= redes

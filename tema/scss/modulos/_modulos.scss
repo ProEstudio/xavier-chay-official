@@ -1,0 +1,91 @@
+.content__title{
+	text-align:center;
+	font-weight:400;
+	font-family:$body--font-family;
+	color:$color2;
+	font-size: 3em;
+}
+#video{
+	height: 720px;
+}
+iframe{
+	width:100%;
+	border: none;
+}
+/*.slides{
+	width: 100%;
+	overflow: hidden;
+	height: 700px;
+}
+.slides ul{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 400%;
+	animation: cambio 20s infinite;
+}
+.slides li{
+	list-style: none;	
+	width: 100%;
+	line-height: 0;	
+}
+.slides img{
+	width: 100%;
+}
+*/
+.slider{
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	@include desde(web){
+		height:700px;
+	}
+	&_img{
+		width: 100%;
+		display: block;
+		margin: auto
+	}
+	section{
+		float: left;
+	}
+	.slider-inner{
+		display: table;
+		position: relative;
+		transition: all .3s;
+		left: 0;
+		animation: cambio 20s infinite
+	}
+}
+#next , #prev{
+	color: rgba($color3, 0.5);
+	font-size: 2em;
+	background:rgba(#000 , 0.5);
+	width: 20%;
+	display: inline-block;
+	cursor: pointer;
+	&:hover{
+		color: $color2;
+		transition: all .3s
+	}
+}
+.slider-nav{
+	text-align: center;
+	background: #000
+}
+@keyframes cambio {
+	0% {margin-left:0;}
+	20% {margin-left: 0;}
+	25% {margin-left: -100%;}
+	45% {margin-left:-100%;}
+	50% {margin-left:-200%;}
+	70% {margin-left:-200%;}
+	75% {margin-left:-300%;}
+	100% {margin-left:-300%;}
+	
+}
+body{
+	@include desde(web){
+		margin: 1.5em;
+		background: #000
+	}
+}

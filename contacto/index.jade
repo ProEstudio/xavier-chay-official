@@ -1,0 +1,33 @@
+//- Contacto.jade
+extends ../tema/template/index.jade
+block titulo
+	title Xavier&Chay | Contacto
+block contenido
+	.grupo.web-1-2
+		.caja.formu.web-50
+			h2 Contacto
+			h3 Informacion y contrataciones: 
+				a(target="_blank" href="mailto:xavierychay@gmail.com").formu_correo xavierychay@gmail.com
+			form(action="#")
+				p.formu_titulo Su nombre
+					input.formu_text(type="text")
+				p.formu_titulo Su e-mail
+					input.formu_text(type="text")
+				p.formu_titulo Asunto
+					input.formu_text(type="text")
+				p.formu_titulo Su mensaje
+					textarea.formu_area
+				input.formu_boton(type="submit" value="ENVIAR")
+		.caja.redes.web-50
+			h2.redes_insta Instagram
+			h2.redes_face Facebook
+			h2.redes_twitter Twitter
+		.block
+			.elemento
+				a.block_link(href="#").icon-facebook
+			.elemento
+				a.block_link(href="#").icon-twitter
+			.elemento
+				a.block_link(href="#").icon-instagram
+			.elemento
+				a.block_link(href="#").icon-youtube

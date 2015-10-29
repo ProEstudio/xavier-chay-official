@@ -1,0 +1,22 @@
+#footer{
+	background:$color;
+	padding:1em;
+	text-align:center;
+	@include hasta(movil){
+		font-size: .8em
+	}
+	@include desde(web){
+		font-size: 1.2em
+	}
+}
+.creditos{
+	
+	&__link{
+		color:$body--color;
+		text-decoration: none;
+	}
+	&__link:hover{
+		color:darken($color2, 4%);
+		transition: all 600ms;
+	}
+}

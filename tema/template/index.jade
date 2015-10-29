@@ -1,0 +1,34 @@
+//- Plantilla.jade
+doctype html
+html(lang="es")
+	head
+		block titulo
+			title Xavier&Chay Official
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1,maximun-scale=1")
+		link(rel="stylesheet", href="/tema/css/estilos.css")
+		link(rel="stylesheet", href="/tema/css/fonts.css")
+	body
+		header#header
+			.grupo
+				.caja.header-1.web-50
+					a(href="../../"): img(src="../img/logo.png").logo
+				.caja.header-2.web-50
+					#toggle-menu.icon-menu.espacio.hasta-web 
+					ul.menu-principal
+						li: a(href="../../") Inicio
+						li: a(href="/noticias/") Noticias
+						li: a(href="/galeria/") Galeria
+						li: a(href="/contacto/") Contacto
+		main#main
+			block contenido
+		footer#footer
+			.grupo
+				.caja
+					p.creditos
+						|XAVIER Y CHAY &copy 2015 | Desing 
+						a(href="http://www.studioweb.site90.com/").creditos__link Jair Perez 
+						span | V5
+		script(src="/tema/js/jquery-1.11.3.min.js")
+		script(src="/tema/js/scripts.js")
+		

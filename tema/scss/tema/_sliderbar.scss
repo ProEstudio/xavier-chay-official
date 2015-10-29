@@ -1,0 +1,113 @@
+#sidebar{
+    padding:.4em;
+	background:$color2;
+}
+.block{
+	padding:1em;
+	text-align: center;
+	margin-bottom: 2em;
+	&_link{
+		font-size: 1.3em;
+		border-radius:50%;
+		display: inline-block;
+	}
+	&_title{
+		font-weight: 500;
+		font-size: 2.5em;
+		margin:1em;
+		@include desde(web){
+			font-size: 4em
+		}
+	}
+}
+.elemento{
+	border-radius:50%;
+	display:inline-block;
+	background:#fff;
+	margin:1em .2em;
+	text-align: center;
+	@include hasta(tablet){
+		text-align: center;
+	}
+	@include desde(web){
+		margin:  .6em
+	}
+}
+.icon-facebook{
+	color: $color2;
+	margin:.6em;
+	background:#fff;
+	@include hasta (tablet){
+		font-size: 1.5em;
+	}
+		&:hover{
+		background:#3B5998;
+		color:#fff;
+		transition:all 0.3s ease 0s;
+		padding:.6em;
+		margin: 0;
+	}
+}
+.icon-twitter{
+	color: $color2;
+	margin:.6em;
+	background:#fff;
+	@include hasta (tablet){
+		font-size: 1.5em;
+	}
+		&:hover{
+		background:#4099FF;
+		color:#fff;
+		transition:all 0.3s ease 0s;
+		padding:.6em;
+		margin: 0;
+	}
+}
+.icon-instagram{
+	color: $color2;
+	margin:.6em;
+	background:#fff;
+	@include hasta (tablet){
+		font-size: 1.5em;
+	}
+		&:hover{
+		background:#125688;
+		color:#fff;
+		transition:all 0.3s ease 0s;
+		padding:.6em;
+		margin: 0;
+	}
+}
+.icon-youtube{
+	color: $color2;
+	margin:.6em;
+	background:#fff;
+	@include hasta (tablet){
+		font-size: 1.5em;
+	}
+		&:hover{
+		background:#C91C1F;
+		color:#fff;
+		transition:all 0.3s ease 0s;
+		padding:.6em;
+		margin: 0;
+	}
+}
+.block-2{
+	background: $color3;
+	color: $color2;
+	padding: 1em;
+	text-align: center;
+	&_titu{
+		color: $color2;
+		font-size: 3em;
+		padding: 3em 0;
+		font-weight: 300;
+		margin: 0
+	}
+}
+.icon-instagram , .icon-twitter, .icon-youtube , .icon-facebook {
+	@include desde (web){
+		font-size: 2.5em;
+	}
+}

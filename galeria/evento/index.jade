@@ -1,0 +1,11 @@
+//evento
+extends ../../tema/template/index.jade
+block titulo
+	title Evento
+block contenido
+	.grupo.web-no-padding
+		.caja.galeria.no-padding
+			- for(var i = 0 ; i < 6 ; i++)
+				a.caja.evento.no-padding(href="evento/")
+					img(src="/tema/img/galeria/evento-1/"+i+".jpg", alt="")
+					p.evento_titulo=evento

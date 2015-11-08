@@ -5,7 +5,6 @@ block titulo
 block contenido
 	.grupo.web-no-padding
 		.caja.galeria.no-padding
-			- for(var i = 0 ; i < 6 ; i++)
-				a.caja.evento.no-padding(href="evento/")
-					img(src="/tema/img/galeria/evento-1/"+i+".jpg", alt="")
-					p.evento_titulo=evento
+			h1 Evento - 1
+			- for(var i = 1 ; i < 7 ; i++)
+				img.evento.img(src="/tema/img/galeria/evento-1/"+i+".jpg", alt="")

@@ -136,18 +136,18 @@
 }
 //GALERIA
 .galeria{
+	padding:1em;
 	.evento{
 		background: #fff;
 		color: $color1;
 		font-weight: 400;
 		font-size: 1.5em;
 		text-decoration: none;
-		margin: .5em 0;
 		text-align: center;
 		border: 2px solid lighten($color1, 10);
 		opacity: .8;
 		@include desde(web){
-			margin: .6em .7em;
+			margin:.7em;
 			width: 30.5%
 		}
 		&:hover{

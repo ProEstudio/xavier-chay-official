@@ -146,17 +146,20 @@
 		text-align: center;
 		border: 2px solid lighten($color1, 10);
 		opacity: .8;
-		background: url('/tema/img/galeria/evento-1/1.jpg');
 		@include desde(web){
-			margin: .6em .8em;
+			margin: .6em .7em;
+			width: 30.5%
 		}
 		&:hover{
 			opacity:1;
 		}
 		&_titulo{
-			margin-top: 90%;
 			padding: .5em;
-			background: rgba($color3, .8)
+			background: rgba($color3, .8);
+		}
+		img{
+			height: 12em;
+			width: 100%
 		}
 	}
 }

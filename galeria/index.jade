@@ -7,6 +7,6 @@ block contenido
 		.caja.galeria.no-padding
 			-list = ["evento-1" , "evento-2" , "evento-3" , "evento-4" , "evento-5", "evento-6"]
 			each evento in list
-				- for(var i = 1; i < 2; i++)
-					a.caja.evento.web-30.no-padding(href="#")
-						p.evento_titulo=evento
+				a.caja.evento.no-padding(href="#")
+					img(src="/tema/img/galeria/"+evento+"/1.jpg", alt="")
+					p.evento_titulo=evento

@@ -2200,7 +2200,7 @@ h6 {
 }
 
 .formu_text:hover, .formu_area:hover, .formu_boton:hover {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #1FAFA5;
 }
 
 .formu_text:focus, .formu_area:focus, .formu_boton:focus {
@@ -2262,12 +2262,12 @@ h6 {
   text-align: center;
   border: 2px solid #3e3e3e;
   opacity: .8;
-  background: url("/tema/img/galeria/evento-1/1.jpg");
 }
 
 @media screen and (min-width: 1025px) {
   .galeria .evento {
-    margin: 0.6em 0.8em;
+    margin: 0.6em 0.7em;
+    width: 30.5%;
   }
 }
 
@@ -2276,9 +2276,13 @@ h6 {
 }
 
 .galeria .evento_titulo {
-  margin-top: 90%;
   padding: .5em;
   background: rgba(242, 242, 242, 0.8);
+}
+
+.galeria .evento img {
+  height: 12em;
+  width: 100%;
 }
 
 #secciones {
@@ -2462,7 +2466,7 @@ h6 {
 
 @media screen and (min-width: 1025px) {
   .icon-instagram, .icon-twitter, .icon-youtube, .icon-facebook {
-    font-size: 2.5em;
+    font-size: 2.1em;
   }
 }
 
@@ -2582,7 +2586,7 @@ iframe {
 
 @media screen and (min-width: 1025px) {
   body {
-    margin: 1.5em;
+    margin: .9em;
     background: #000;
   }
 }

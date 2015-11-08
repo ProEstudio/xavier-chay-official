@@ -51,5 +51,5 @@ prev.on('click' , function(){
 });
 */
 var g = $(".galeria")
-var e = g.find(".evento_titulo")
+var e = g.find(".evento")
 var ne = e.length
